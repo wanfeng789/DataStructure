@@ -19,3 +19,12 @@ add_executable(04_Adjacent_Multi_List 04_Adjacent_Multi_List/main.c
         04_Adjacent_Multi_List/adjacencyMultiList.c
         04_Adjacent_Multi_List/adjacencyMultiList.h
 )
+add_executable(05_Kruskal 05_Kruskal/main.c
+        05_Kruskal/Kruskal.c
+        05_Kruskal/Kruskal.h
+        01_AdjacentMatrix/adjacentMatrix.h
+        01_AdjacentMatrix/adjacentMatrix.c
+)
+
+#包含头文件
+target_include_directories(05_Kruskal PRIVATE 01_AdjacentMatrix)
