@@ -25,6 +25,12 @@ add_executable(05_Kruskal 05_Kruskal/main.c
         01_AdjacentMatrix/adjacentMatrix.h
         01_AdjacentMatrix/adjacentMatrix.c
 )
-
+add_executable(06_Prim 06_Prim/main.c
+        06_Prim/Prim.c
+        06_Prim/Prim.h
+        01_AdjacentMatrix/adjacentMatrix.h
+        01_AdjacentMatrix/adjacentMatrix.c
+)
 #包含头文件
 target_include_directories(05_Kruskal PRIVATE 01_AdjacentMatrix)
+target_include_directories(06_Prim PRIVATE 01_AdjacentMatrix)
