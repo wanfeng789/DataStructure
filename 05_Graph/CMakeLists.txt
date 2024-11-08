@@ -31,6 +31,14 @@ add_executable(06_Prim 06_Prim/main.c
         01_AdjacentMatrix/adjacentMatrix.h
         01_AdjacentMatrix/adjacentMatrix.c
 )
+add_executable(07_Dijistra 07_Dijistra/main.c
+        07_Dijistra/DijkstraShortPath.c
+        07_Dijistra/DijkstraShortPath.h
+        01_AdjacentMatrix/adjacentMatrix.h
+        01_AdjacentMatrix/adjacentMatrix.c
+)
+
 #包含头文件
 target_include_directories(05_Kruskal PRIVATE 01_AdjacentMatrix)
 target_include_directories(06_Prim PRIVATE 01_AdjacentMatrix)
+target_include_directories(07_Dijistra PRIVATE 01_AdjacentMatrix)
