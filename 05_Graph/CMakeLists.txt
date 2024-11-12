@@ -37,8 +37,15 @@ add_executable(07_Dijistra 07_Dijistra/main.c
         01_AdjacentMatrix/adjacentMatrix.h
         01_AdjacentMatrix/adjacentMatrix.c
 )
+add_executable(08_TopSort 08_TopSort/main.c
+                            08_TopSort/topologicalSort.c
+        08_TopSort/topologicalSort.h
+        02_Adjacent_List/adjacentList.h
+        02_Adjacent_List/adjacentList.c
 
+)
 #包含头文件
 target_include_directories(05_Kruskal PRIVATE 01_AdjacentMatrix)
 target_include_directories(06_Prim PRIVATE 01_AdjacentMatrix)
 target_include_directories(07_Dijistra PRIVATE 01_AdjacentMatrix)
+target_include_directories(08_TopSort PRIVATE 02_Adjacent_List)
